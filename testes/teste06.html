@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs e suas propriedades</title>
+    <style>
+
+        body {
+            background-image: linear-gradient(to right, aqua, aquamarine);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box1 {
+            display: inline-block;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            border-radius: 20%;
+            min-width: 200px;
+            max-width: 500px;
+        }
+        h2 {
+            margin: auto;
+            text-align: center;
+            /* margin-top: 40%; */
+            background-color: azure;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #q1 {
+            background-color: aqua;
+            background-image: linear-gradient(to top, blue, aqua);
+        }
+        
+        #q1 h2 {
+            position: relative;
+            border-radius: 38px 38px 0px 0px;
+            top: 0%;
+        }
+
+        #q2 {
+            background-color: violet;
+            background-image: linear-gradient(to top, red, violet);
+
+        }
+        #q2 h2 {
+            position: relative;
+            border-radius: 38px 38px 0px 0px;
+            top: 0%;
+        }
+        
+        #q3 {
+            background-color: coral;
+            background-image: linear-gradient(to top, darkorange, yellow);
+        }
+
+        #q3 h2 {
+            position: relative;
+            border-radius: 40px 40px 0px 0px;
+            top: 38%;
+            left: 38%;
+            transform: rotate(90deg);
+            color: red;
+            text-transform: uppercase;
+        }
+
+        #q4 {
+            background-color: yellowgreen;
+            background-image: linear-gradient(to top, green, yellowgreen);
+        }
+
+        #q4 h2 {
+            position: relative;
+            border-radius: 0px 0px 38px 38px;
+            top: 75.8%;
+        }
+
+        #q5 {
+            background-color: steelblue;
+            background-image: linear-gradient(to top, steelblue,lightblue);
+        }
+
+        #q5 h2 {
+            position: relative;
+            border-radius: 0px 0px 38px 38px;
+            top: 75.8%;
+        }
+
+        #q6 {
+            background-color: aquamarine;
+            background-image: linear-gradient(to top, aqua, aquamarine);
+        }
+
+        #q6 h2 {
+            position: relative;
+            border-radius: 40px 40px 0px 0px;
+            top: 38%;
+            left: -38%;
+            transform: rotate(270deg);
+            color: red;
+            text-transform: uppercase;
+        }
+        input {
+            border-radius: 20px;
+        }
+
+        div.img {
+            background-color: white;
+            position: relative;
+            text-align: center;
+            top: 25%;
+            padding-top: 10px;
+            padding-left: 10px;
+            width: 50px;
+            height: 50px;
+            left: 35%;
+        }
+
+        #instagram {
+            background-image: linear-gradient(to bottom, purple, orange);
+            border: none;
+        }
+        #bolinha {
+            border: 15px solid white;
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            left: -4.5%;
+            top: 48%;
+            border-radius: 30%;
+            transform: translate(50%, 50%);
+        }
+        #mini-bolinha {
+            /* background-color: white; */
+            border: 10px solid white;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            left: -10%;
+            top: -8%;
+            transform: translate(50%, 50%);
+            border-radius: 50%;
+        }
+
+        #bola {
+            background-color: white;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            position: relative;
+            left: 70%;
+            top: -50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1" id="q1">
+        <h2>R$ 1790,00</h2>
+        <div class="img"></div>
+    </div>
+    <div class="box1" id="q2">
+        <h2>R$ 1790,00</h2>
+    </div>
+    <div class="box1" id="q3">
+        <h2>Promoção</h2>
+    </div>
+    <div class="box1" id="q4">
+        <h2>R$ 1790,00</h2>
+    </div>
+    <div class="box1" id="q5">
+        <h2>R$ 1790,00</h2>
+    </div>
+    <div class="box1" id="q6">
+        <h2>Promoção</h2>
+    </div>
+    <div class="box1" id="instagram">
+        <div id="bolinha">
+            <div id="mini-bolinha">
+            </div>
+            <div id="bola"></div>
+        </div>
+        
+    </div>
+</body>
+</html>

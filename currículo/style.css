@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@200;300;400;600;900&display=swap');
+
+:root {
+    --cor1: #caf0f8;
+    --cor2: #90e0ef;
+    --cor3: #00b4d8;
+    --cor4: #0077b6;
+    --cor5: #03045e;
+    --cor6: #00ffff;
+
+    --fonte-padrao:'Source Sans Pro', cursive, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    max-width: 900px;
+    min-width: 220px;
+    max-height: 990px;
+    padding: 10px;
+    /* background-color: aquamarine; */
+}
+
+nav {
+    border: 1px solid #000000;
+    max-width: 350px;
+    margin: auto;
+    padding: 5px;
+    box-shadow: -1px 4px 17px -10px rgb(0 0 0 / 52%);
+}
+nav a {
+    text-align: center;
+    text-decoration: none;
+    padding-left: 8px;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1:hover {
+    text-decoration: underline;
+}
+
+.bg-image {
+    background-image: url(../currículo/img/background-pq.jpg);
+    position: relative;
+    transform: translate(0%, 43%);
+    height: 200px;
+    top: 50%;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    box-shadow: -1px 4px 25px 2px rgba(0, 0, 0, 0.521);
+}
+
+.bg-image img{
+    border-radius: 50%;
+    position: relative;
+    transform: translate(0%, -23%);
+    box-shadow: -1px 4px 21px -5px rgb(0 0 0 / 52%);
+}
+
+.text-div h2{
+    background-image: linear-gradient(to top, var(--cor3), var(--cor6));
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    position: relative;
+    max-width: 620px;
+    margin: auto;
+}
+
+.text-div p {
+    padding: 10px;
+    text-align: justify;
+    background-color: white;
+    box-shadow: 0px 5px 37px -1px rgba(0, 0, 0, 0.356);
+    margin: 10px -10px -10px -10px;
+    border-radius: 0px 0px 10px 10px;
+    max-width: 600px;
+    margin: auto;
+    text-indent: 15px;
+}

@@ -1,0 +1,8 @@
+div.menu-bar > ul ul,ol{
+    display: none;
+    background-color: yellowgreen;
+}
+
+.menu-bar > ul > li:hover > ul, li:hover >ol{
+    display: block;
+}

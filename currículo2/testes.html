@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul{
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        nav ul li {
+            display: inline;
+            position: relative;
+        }
+        
+        nav ul li a {
+            display: inline-block;
+        }
+
+        /* sub-menu */
+        nav ul {
+            display: none;
+            left: 1;
+            position: absolute;
+        }
+
+        nav:hover > ul{
+            display: block;
+        }
+
+        nav ul li a {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#contato">Contato
+            <ul>
+                <li><a href="#telefones">Telefones</a></li>
+                <li><a href="#redes-socias">Redes socias</a></li>
+            </ul>
+        </a>
+        <a href="#sobre-mim">Sobre-mim</a>
+        <a href="#premios">Prêmios</a>
+        <a href="#habilidades">Habilidades</a>
+    </nav>
+</body>
+</html>

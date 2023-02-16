@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        /* TOP-MENU */
+
+        .top-menu {
+            background-color: #FFF159;
+            width: 700px;
+            margin: auto;
+            padding: 5px;
+        }
+        .top-menu ul {
+            list-style: none;
+        }
+
+        /* MENU-OPC */
+
+        .menu-opc{
+            display: inline;
+        }
+        .menu-opc a {
+            text-decoration: none;
+            color: #4052db;
+            padding: 10px;
+        }
+        .menu-opc a:hover{
+            color: white;
+            background-color: #40a2dbb2;
+            border-radius: 7%;
+            text-decoration: underline;
+        }
+        .menu-opc ul {
+            display: none;
+        }
+        .menu-opc:hover ul{
+            display: block;
+        }
+
+        /* MENU */
+
+        .menu li{
+            display: list-item;
+            color: yellowgreen;
+        }
+
+        /* SUB-MENU */
+
+        .sub-menu a{
+            color: yellowgreen;
+        }
+        .sub-menu a:hover{
+            color: white;
+            background-color: rgba(153, 205, 50, 0.466);
+        }
+        .sub-menu li {
+            display: none;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="top-menu">
+        <ul>
+            <li class="menu-opc">
+                <a href="#">Categorias</a>
+                <ul class="menu">
+                    <li>Veículos</li>
+                    <li>Supermercado</li>
+                    <li>
+                        <a href="#">Tecnologia</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Celulares e Telefones</a>
+                                <ul>
+                                    <li>Celulares e Smartphones</li>
+                                    <li>Acessórios para Celulares</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Câmeras e Acessórios</a>
+                                <ul>
+                                    <li>Acessórios para Câmeras</li>
+                                    <li>Câmeras</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Games</a>
+                                <ul>
+                                    <li>Video Games</li>
+                                    <li>Fliperamas e Arcade</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Informática</a>
+                                <ul>
+                                    <li>Componentes para PC</li>
+                                    <li>Impressão</li>
+                                    <li>Acessórios para Notebook</li>
+                                    <li>Conectividade e Redes</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Eletrônicos, Áudio e Vídeo</a>
+                                <ul>
+                                    <li>Acessórios para Áudio e Vídeo</li>
+                                    <li>Áudio portátil e Acessórios</li>
+                                    <li>Componentes Eletrônicos</li>
+                                    <li>Equipamentos para DJs</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Televisores</a></li>
+                        </ul>
+                    </li>
+                    <li>Casa e Móveis</li>
+                    <li>Eletrodomésticos</li>
+                    <li>Esportes e Fitness</li>
+                    <li>Ferramentas</li>
+                    <li>Construção</li>
+                    <li>Indústria e Comércio</li>
+                    <li>Saúde</li>
+                    <li>Acessórios para Veículos</li>
+                    <li>Beleza e Cuidado Pessoal</li>
+                </ul>
+            </li>
+            <li class="menu-opc"><a href="#">Ofertas do dia</a></li>
+            <li class="menu-opc"><a href="#">Histórico</a></li>
+            <li class="menu-opc"><a href="#">Supermercado</a></li>
+            <li class="menu-opc"><a href="#">Moda</a></li>
+            <li class="menu-opc"><a href="#">Vender</a></li>
+            <li class="menu-opc"><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

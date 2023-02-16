@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+    background-color: #F0F0F0;
+}
+a {
+    color: #595959;
+    text-decoration: none;
+    padding: 0px 8px;
+}
+a:hover {
+    color: #F16A27;
+}
+
+.sub-menu ul { padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+.sub-menu ul li {
+    display: inline; 
+}
+
+.sub-menu ul li a:hover { 
+    background-color:#D6D6D6;
+}
+
+#header-principal {
+    background-color: #F16A27;
+    text-align: center;
+}
+#header-menu {
+    background-color: white;
+}
+
+#header-menu > nav > a {
+    text-decoration: none;
+    padding: 0px 8px;
+    font-size: smaller;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+}
+
+#header-menu > nav {
+    /* height: 80px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer {
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 10px;
+}
+

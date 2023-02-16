@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs alinhadas</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h2 {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            background-color: aquamarine;
+            max-width: 600px;
+            max-height: 700px;
+            min-width: 500px;
+            min-height: 200px;
+            margin: 30px; 
+            padding: 5px;
+            
+            display: inline-block;
+        }
+
+        .container h2 {
+            padding: 10px;
+        }
+
+        .container ul {
+            list-style: none;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0px;
+        }
+
+        .bg-image picture {
+            /* border-radius: 50% ; */
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image">
+        <picture>
+            <source media="(max-width: 400px)" srcset="../currículo/img/black-circulo-250.png" type="image/png">
+            <img src="../currículo/img/black-circulo-250.png" alt="Perfil">
+        </picture>
+    </div>
+    <div class="container">
+        <h2>Prêmios</h2>
+        <ul>
+            <li>Aluno destaque 2017 e 2018</li>
+            <li>3º lugar FeCEESP (8ª edição) (2022) - Desafios matemáticos</li>
+            <li>Certificado ONC (2021-2022)</li>
+            <li>Certificado FeCEESP (2022)</li>
+            <li>Certificado 25ª OBA</li>
+            <li>Certificado Eletiva de Fotografia</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Python (2020) - Curso em Vídeo</li>
+            <li>ShellScript (Terminal Language)</li>
+            <li>Inglês intermediário (2021) - Kultivi</li>
+            <li>Informática avançada</li>
+            <li>Pacote office</li>
+            <li>Experiência com edição de fotos e vídeos</li>
+            <li>Curso de fotografia (2021) - Fotografo logo, existo!</li>
+        </ul>
+    </div>
+</body>
+</html>
