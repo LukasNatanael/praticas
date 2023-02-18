@@ -1,59 +1,86 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: #0d1b2a;
+    --cor2: #1b263b;
+    --cor3: #415a77;
+    --cor4: #778da9;
+    --cor5: #e0e1dd;
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-@media all {
-    header {
-        background-color: gray;
-        text-align: center;
-        margin: auto;
-    }
-    
-    #burguer {
-        background-color: darkblue;
-    }
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #778da9;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
 
-    menu > ul {
-        list-style-type: none;
-        text-align: center;
-    }
-    
-    menu > ul > li > a {
-        color: white;
-        text-decoration: none;
-        display: block;
-        padding: 8px;
-    }
-    
-    menu > ul > li > a:hover {
-        background-color: rgb(116, 115, 115);
-    }
-    
-    article {
-        width: 80vw;
-        background-color: lightgray;
-        padding: 10px;
-        margin: 10px auto;
-    }
-    
-    article > h1 {
-        text-align: center;
-        background-color: rgb(148, 147, 147);
-        padding: 8px;
-    }
-    article > p {
-        text-indent: 23px;
-        text-align: justify;
-        padding: 8px;
-    }
-    
-    footer {
-        text-align: center;
-        padding: 10px;
-        background-color: gray;
-        color: white;
-    }
+header {
+    text-align: center;
+    width: 562px;
+    margin: 10px auto;
+    margin: 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+header > span#burguer {
+    cursor: pointer;
+}
+
+header > h1 {
+    color: white;
+    background-color: var(--cor1);
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+header > menu > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+header > menu > ul {
+    list-style-type: none;
+}
+
+header > menu#itens {
+    display: none;
+}
+
+main {
+    background-color: var(--cor5);
+    width: 500px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main > article > h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+main > article > p {
+    text-indent: 20px;
+    padding: 2.3px;
+    text-align: justify;
+}
+
+footer {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0px -10px;
+    border-radius: 0px 0px 10px 10px;
 }
