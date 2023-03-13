@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal bar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            gap: 1em;
+            /* background-color: rgba(62, 74, 82, 0.747); */
+            color: white;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 1em;
+            width: 30em;
+            margin: auto;
+        }
+
+        .icone {
+            border-radius: 0.3em;
+            padding: 0.3em;
+            cursor: pointer;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.39);
+        }
+
+        .icone:hover {
+            transform: scale(1.2);
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.39);
+        }
+
+        .icone-1 {background-color: rgb(224, 101, 101);}
+        .icone-2 {background-color: rgb(40, 163, 235);}
+        .icone-3 {background-color: rgb(101, 224, 128);}
+        .icone-4 {background-color: rgb(224, 216, 101);}
+        .icone-5 {background-color: rgb(224, 101, 187);}
+    </style>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="icone icone-1">Caixa 1</div>
+            <div class="icone icone-2">Caixa 2</div>
+            <div class="icone icone-3">Caixa 3</div>
+            <div class="icone icone-4">Caixa 4</div>
+            <div class="icone icone-5">Caixa 5</div>
+        </section>
+    </main>
+</body>
+</html>
