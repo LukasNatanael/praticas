@@ -10,28 +10,43 @@
             padding: 0;
             margin: 0;
         }
+
+        body {
+            overflow: hidden;
+        }
         .container {
             display: flex;
             gap: 1em;
             /* background-color: rgba(62, 74, 82, 0.747); */
             color: white;
             justify-content: space-around;
-            flex-wrap: wrap;
             padding: 1em;
-            width: 30em;
+            width: 38em;
             margin: auto;
+            /* flex-wrap: wrap; */
+            overflow-x: auto;
+            transition: all .3s;
+            
         }
-
+        
         .icone {
             border-radius: 0.3em;
-            padding: 0.3em;
+            padding: 0.2em;
             cursor: pointer;
             box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.39);
+            transition: all .3s;
+
         }
 
         .icone:hover {
-            transform: scale(1.2);
             box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.39);
+            transform: scale(1.2);
+            width: 4em;
+            justify-content: center;
+            /* gap: 1.5em; */
+            text-align: center;
+            transition: all .3s;
+
         }
 
         .icone-1 {background-color: rgb(224, 101, 101);}
@@ -44,12 +59,28 @@
 <body>
     <main>
         <section class="container">
-            <div class="icone icone-1">Caixa 1</div>
-            <div class="icone icone-2">Caixa 2</div>
-            <div class="icone icone-3">Caixa 3</div>
-            <div class="icone icone-4">Caixa 4</div>
-            <div class="icone icone-5">Caixa 5</div>
+            <div class="icone icone-1" onclick="cor()">Caixa 1</div>
+            <div class="icone icone-2" onclick="cor()">Caixa 2</div>
+            <div class="icone icone-3" onclick="cor()">Caixa 3</div>
+            <div class="icone icone-4" onclick="cor()">Caixa 4</div>
+            <div class="icone icone-5" onclick="cor()">Caixa 5</div>
+            <div class="icone icone-1" onclick="cor()">Caixa 6</div>
+            <div class="icone icone-2" onclick="cor()">Caixa 7</div>
+            <div class="icone icone-3" onclick="cor()">Caixa 8</div>
+            <div class="icone icone-4" onclick="cor()">Caixa 9</div>
+            <div class="icone icone-5" onclick="cor()">Caixa 10</div>
         </section>
+        <script>
+            const element = document.querySelector(".container");
+            element.addEventListener('wheel', (event) => {
+            event.preventDefault();
+
+            element.scrollBy({
+                left: event.deltaY < 0 ? -30 : 30,
+                
+            });
+            });
+        </script>
     </main>
 </body>
 </html>
