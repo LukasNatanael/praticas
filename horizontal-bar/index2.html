@@ -12,18 +12,29 @@
             margin: 0;
         }
 
-        main {
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* main {
             display: flex;
             justify-content: center;
             align-items: center;
-            /* background-color: aquamarine; */
-            height: 98vh;
-        }
+        } */
         .container {
             display: flex;
             gap: 0.5em;
             justify-content: center;
+            align-items: center;
             width: 500px;
+            height: 500px;
+
+            /* background-color: aqua; */
+            /* flex-wrap: wrap; */
         }
         
         .icone {
@@ -34,7 +45,7 @@
             flex-direction: column;
             align-items: center;
 
-            transition: all .3s;
+            transition: all .5s;
         }
 
         .icone:hover {
@@ -45,7 +56,7 @@
             display: flex;
             text-align: center;
 
-            transition: all .5;
+            /* transition: all .5; */
             /* background-color: antiquewhite; */
         }
 
@@ -67,7 +78,7 @@
             text-align: justify;
             /* padding: 0.3em; */
             text-indent: 1em;
-            transition: all .3s;
+            /* transition: all .3s; */
         }
         
         .icone:hover > article > p {
@@ -79,10 +90,11 @@
         img {
             max-width: 20em;
             border-radius: 0.3em 0.3em 0em 0em;
+            transition: all .5s;
         }
 
         .icone-1 {
-            max-width: 20em;
+            width: 20em;
         }
 
         
@@ -112,7 +124,15 @@
                     <p>Os Países Baixos, conhecidos informalmente como Holanda, é uma nação constituinte do Reino dos Países Baixos localizada na Europa ocidental. O país é uma monarquia constitucional parlamentar democrática banhada pelo mar do Norte a norte e a oeste, que faz fronteira com a Bélgica a sul e com a Alemanha a leste.</p>
                 </article>
             </div>
-            <!-- <div class="icone icone-4">icone-4</div> -->
+        </section>
+        <!-- <section class="container">
+            <div class="icone icone-4">
+                <img src="img4.jpg" alt="Alaska">
+                <article>
+                    <h1>Japão</h1>
+                    <p>O Japão, país insular no Oceano Pacífico, tem cidades densas, palácios imperiais, parques nacionais montanhosos e milhares de santuários e templos. Os trens-bala Shinkansen conectam as principais ilhas: Kyushu (com as praias subtropicais de Okinawa), Honshu (onde ficam Tóquio e a sede do memorial da bomba atômica de Hiroshima) e Hokkaido (famosa como destino para a prática de esqui). Tóquio, a capital, é conhecida por seus arranha-céus e lojas e pela cultura pop.</p>
+                </article>
+            </div> -->
             <!-- <div class="icone icone-5">icone-5</div> -->
         </section>
     </main>

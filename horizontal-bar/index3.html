@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal cards</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            display: flex;
+            flex-direction: row;
+            column-gap: 2em;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5em;
+            /* align-items: stretch; */
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+        }
+
+        .container {
+            background-color: lightgray;
+            max-width: 20em;
+            max-height: 30em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 0.3em;
+        }
+        
+        .container > h1 {
+            padding-top: 0.4em;
+        }
+        
+        .container > p {
+            /* display: none; */
+            text-align: justify;
+            text-indent: 2em;
+            padding: 1em;
+            overflow-y: auto;
+        }
+
+        img {
+            max-width: 20em;
+            border-radius: 0.3em 0.3em 0 0;
+        }
+
+        ::-webkit-scrollbar              { background-color: transparent;  width: 0.5em;} /* 1 */
+        ::-webkit-scrollbar-button       { background-color: blue; display: none;} /* 2 */
+        ::-webkit-scrollbar-track        { background-color: green; display: none;} /* 3 */
+        ::-webkit-scrollbar-track-piece  { background-color: yellow; display: none;} /* 4 */
+        ::-webkit-scrollbar-thumb        { background-color: rgba(255, 123, 0, 0.541); border-radius: 0.3em;} /* 5 */
+        ::-webkit-scrollbar-corner       { background-color: pink; } /* 6 */
+        ::-webkit-resizer                { background-color: gray;} /* 7 */
+
+</style>
+
+</head>
+<body>
+    <main>
+        <section class="container">
+            <img src="img.jpg" alt="">
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolores optio, doloremque, nesciunt laborum ut quibusdam eum voluptatem aspernatur expedita alias? Accusamus cum velit fugiat quisquam est repudiandae aliquam optio?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente at eum ea facere odio accusamus praesentium vero reprehenderit. Beatae numquam eaque doloremque dolorem fugit odit voluptate sapiente mollitia quibusdam ullam?
+            lo
+            </p>
+        </section>
+        <section class="container">
+            <img src="img2.jpg" alt="">
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolores optio, doloremque, nesciunt laborum ut quibusdam eum voluptatem aspernatur expedita alias? Accusamus cum velit fugiat quisquam est repudiandae aliquam optio?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente at eum ea facere odio accusamus praesentium vero reprehenderit. Beatae numquam eaque doloremque dolorem fugit odit voluptate sapiente mollitia quibusdam ullam?
+            </p>
+        </section>
+        <section class="container">
+            <img src="img3.jpg" alt="">
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolores optio, doloremque, nesciunt laborum ut quibusdam eum voluptatem aspernatur expedita alias? Accusamus cum velit fugiat quisquam est repudiandae aliquam optio?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente at eum ea facere odio accusamus praesentium vero reprehenderit. Beatae numquam eaque doloremque dolorem fugit odit voluptate sapiente mollitia quibusdam ullam?
+            </p>
+        </section>
+
+        <section class="container">
+            <img src="img.jpg" alt="">
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolores optio, doloremque, nesciunt laborum ut quibusdam eum voluptatem aspernatur expedita alias? Accusamus cum velit fugiat quisquam est repudiandae aliquam optio?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente at eum ea facere odio accusamus praesentium vero reprehenderit. Beatae numquam eaque doloremque dolorem fugit odit voluptate sapiente mollitia quibusdam ullam?
+            lo
+            </p>
+        </section>
+        <section class="container">
+            <img src="img2.jpg" alt="">
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolores optio, doloremque, nesciunt laborum ut quibusdam eum voluptatem aspernatur expedita alias? Accusamus cum velit fugiat quisquam est repudiandae aliquam optio?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente at eum ea facere odio accusamus praesentium vero reprehenderit. Beatae numquam eaque doloremque dolorem fugit odit voluptate sapiente mollitia quibusdam ullam?
+            </p>
+        </section>
+        <section class="container">
+            <img src="img3.jpg" alt="">
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolores optio, doloremque, nesciunt laborum ut quibusdam eum voluptatem aspernatur expedita alias? Accusamus cum velit fugiat quisquam est repudiandae aliquam optio?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente at eum ea facere odio accusamus praesentium vero reprehenderit. Beatae numquam eaque doloremque dolorem fugit odit voluptate sapiente mollitia quibusdam ullam?
+            </p>
+        </section>
+    </main>
+</body>
+</html>
