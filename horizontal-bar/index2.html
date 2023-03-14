@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal bar</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aquamarine; */
+            height: 98vh;
+        }
+        .container {
+            display: flex;
+            gap: 0.5em;
+            justify-content: center;
+            width: 500px;
+        }
+        
+        .icone {
+            display: flex;
+            padding: 0.5em;
+            border-radius: 0.5em;
+            cursor: pointer;
+            flex-direction: column;
+            align-items: center;
+
+            transition: all .3s;
+        }
+
+        .icone:hover {
+            transform: scale(1.1);
+            /* width: 100px; */
+            /* gap: 30px; */
+            /* background-color: aqua; */
+            display: flex;
+            text-align: center;
+
+            transition: all .5;
+            /* background-color: antiquewhite; */
+        }
+
+        /* .icone > article:hover {
+            background-color: antiquewhite;
+
+        } */
+        
+        .icone > article > h1 {
+            text-align: center;
+            background-color: rgba(173, 216, 230, 0.356);
+            width: 17.1em;
+            border-radius: 0em 0em 0.3em 0.3em;
+
+        }
+        
+        .icone > article > p {
+            display: none;
+            text-align: justify;
+            /* padding: 0.3em; */
+            text-indent: 1em;
+            transition: all .3s;
+        }
+        
+        .icone:hover > article > p {
+            display: flex;
+            /* transition: all .5s; */
+            
+        }
+
+        img {
+            max-width: 20em;
+            border-radius: 0.3em 0.3em 0em 0em;
+        }
+
+        .icone-1 {
+            max-width: 20em;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="icone icone-1">
+                <img src="img.jpg" alt="Alaska">
+                <article>
+                    <h1>Alaska</h1>
+                    <p>O Alasca, a noroeste do Canadá, é o maior e menos povoado estado dos EUA. Ele é conhecido pelo relevo diverso composto por espaços abertos, montanhas e florestas, com uma vida selvagem abundante e muitas cidades pequenas. O Alasca é um destino para atividades ao ar livre como esqui, mountain biking e canoagem. O enorme Parque Nacional e Reserva de Denali abriga o monte Denali (anteriormente chamado de Monte McKinley), o pico mais alto da América do Norte.</p>
+                </article>
+            </div>
+            <div class="icone icone-2"">
+                <img src="img2.jpg" alt="Alaska">
+                <article>
+                    <h1>Canadá</h1>
+                    <p>O Canadá é um país norte-americano que se estende desde os EUA, no sul, até o Círculo Polar Ártico, no norte. Entre suas grandes cidades estão a gigantesca Toronto; Vancouver, centro cinematográfico da costa oeste; Montreal e Québec City, que falam francês; e a capital, Ottawa. As vastas regiões de natureza selvagem do Canadá compreendem o Parque Nacional de Banff, repleto de lagos nas Montanhas Rochosas. Abriga também as Cataratas do Niágara, um famoso conjunto de enormes cachoeiras.</p>
+                </article>
+            </div>
+            <div class="icone icone-3">
+                <img src="img3.jpg" alt="Alaska">
+                <article>
+                    <h1>Holanda</h1>
+                    <p>Os Países Baixos, conhecidos informalmente como Holanda, é uma nação constituinte do Reino dos Países Baixos localizada na Europa ocidental. O país é uma monarquia constitucional parlamentar democrática banhada pelo mar do Norte a norte e a oeste, que faz fronteira com a Bélgica a sul e com a Alemanha a leste.</p>
+                </article>
+            </div>
+            <!-- <div class="icone icone-4">icone-4</div> -->
+            <!-- <div class="icone icone-5">icone-5</div> -->
+        </section>
+    </main>
+</body>
+</html>
