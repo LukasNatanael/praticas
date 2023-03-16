@@ -118,7 +118,11 @@ label #cancel {
 
     a:hover {
         width: 200px;
-        background-color: inherit;
+        background: inherit;
     }
 
+    .sidebar a:hover{
+        opacity: 1;
+        visibility: visible;
+    }
 }
