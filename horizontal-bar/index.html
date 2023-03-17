@@ -1,86 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizontal bar</title>
+    <title>Sidebar</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
 
-        body {
-            overflow: hidden;
-        }
-        .container {
-            display: flex;
-            gap: 1em;
-            /* background-color: rgba(62, 74, 82, 0.747); */
-            color: white;
-            justify-content: space-around;
-            padding: 1em;
-            width: 36em;
-            margin: auto;
-            /* flex-wrap: wrap; */
-            /* overflow-x: auto; */
-            overflow: hidden;
-            transition: all .3s;
+        * {
+            height: 100vh;
         }
         
-        .icone {
-            border-radius: 0.3em;
-            padding: 0.2em;
-            cursor: pointer;
-            /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.39); */
-            transition: all .1s;
-            text-align: center;
-
-        }
-
-        .icone:hover {
-            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.39);
-            transform: scale(1.2);
-            width: 4em;
+        .container {
+            display: flex;
+            align-items: center;
             justify-content: center;
-            row-gap: 10em;
-            /* transition: all .3s; */
+            gap: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .itens {
+            width: 100px;
+            height: 100px;
+            
+            display: flex;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
 
+            /* transition: all .1s ease; */
+            /* transition: all .1s ease-in; */
+            /* transition: all .1s ease-out; */
+            /* transition: all .1s ease-in-out; */
+        }
+        
+        .itens:hover {
+            transform: scale(1.2);
         }
 
-        .icone-1 {background-color: rgb(224, 101, 101);}
-        .icone-2 {background-color: rgb(40, 163, 235);}
-        .icone-3 {background-color: rgb(101, 224, 128);}
-        .icone-4 {background-color: rgb(224, 216, 101);}
-        .icone-5 {background-color: rgb(224, 101, 187);}
+        @keyframes rotate {
+            0% { transform: rotate(45deg);}
+            50% { transform: rotate(90deg); }
+            100% { transform: 180deg;}
+        }
+
+        .item-1 { 
+            transition: all .1s ease; background-color: red;
+        }
+        .item-2 { 
+            transition: all .1s ease-in; background-color: blue;
+        }
+        .item-3 { 
+            transition: all .1s ease-out; background-color: green;
+        }
+        .item-4 { 
+            transition: all .1s ease-in-out; background-color: purple;
+        }
+
     </style>
 </head>
 <body>
-    <main>
-        <section class="container">
-            <div class="icone icone-1">Caixa 1</div>
-            <div class="icone icone-2">Caixa 2</div>
-            <div class="icone icone-3">Caixa 3</div>
-            <div class="icone icone-4">Caixa 4</div>
-            <div class="icone icone-5">Caixa 5</div>
-            <div class="icone icone-1">Caixa 6</div>
-            <div class="icone icone-2">Caixa 7</div>
-            <div class="icone icone-3">Caixa 8</div>
-            <div class="icone icone-4">Caixa 9</div>
-            <div class="icone icone-5">Caixa 10</div>
-        </section>
-        <script>
-            const element = document.querySelector(".container");
-            element.addEventListener('wheel', (event) => {
-            event.preventDefault();
-
-            element.scrollBy({
-                left: event.deltaY < 0 ? -30 : 30,
-                
-            });
-            });
-        </script>
+    <main class="container">
+        <div class="itens item-1">box</div>
+        <div class="itens item-2">box</div>
+        <div class="itens item-3">box</div>
+        <div class="itens item-4">box</div>
     </main>
 </body>
 </html>
