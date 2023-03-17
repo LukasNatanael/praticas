@@ -1,0 +1,45 @@
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.btn {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: #ff006e;
+    background-color: #ffafcca6;
+    border: 10px solid #ff006e;
+    border-radius: 5px;
+
+    /* Define qual o efeito de transição deve ser aplicado no estado de foco */
+    transition-property: transform;
+    /* Define quanto tempo a transição deve levar para ser concluída */
+    transition-duration: .3s;
+    /* Define a curva de aceleração para a  transição*/
+    /* ease-in; ease-out; ease-in-out; linear; ease */
+    transition-timing-function: ease;
+    /* Define o atraso da  antes que a transição entre em vigor */
+    transition-delay: 0s;
+
+    /* Short-hand */
+    /* A ordem de transição é a mesma de cima ↑ */
+    /* Posso separar a transição de cada elemento usando a vírgula */
+    /* transition: transform .3s, background-color .3s, color .3s; */
+    transition: all .3s;
+}
+
+.btn:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    background-color: #ff006e;
+    color: white;
+}
