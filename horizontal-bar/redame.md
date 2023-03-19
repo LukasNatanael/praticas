@@ -28,7 +28,7 @@ ___
 [Meu link](http://meulink.com "Link personalizado")
 
 <!-- Imagens -->
-![Texto alternativo](https://octodex.github.com/images/minion.pn)
+![Texto alternativo](https://octodex.github.com/images/minion.png)
 
 <!-- Listas -->
 * Item 1
