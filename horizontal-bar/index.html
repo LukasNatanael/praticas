@@ -5,36 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-
-        * {
+        
+        html, body {
             height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
+        .border {
+            border: 1px solid red;
+        }
+
         .container {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 1em;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 700;
             color: white;
-            flex-direction: column;
-            transition: all .1s ease;
+            /* flex-direction: column; */
+
+            height: 30vh;
 
         }
         
         .itens {
-            width: 100px;
-            height: 100px;
+            width: 180px;
+            height: 110px;
             
             display: flex;
             border-radius: 10px;
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            flex-direction: column;
 
-            /* transition: all .1s ease; */
+            background-color: rgba(0, 0, 0, 0.63);
+            transition: all .3s ease-in-out;
             /* transition: all .1s ease-in; */
             /* transition: all .1s ease-out; */
             /* transition: all .1s ease-in-out; */
@@ -42,47 +53,119 @@
 
         
         .itens:hover {
-            transform: scale(1.3);
+            transform: scale(1.1);
             margin: 20px;
 
-        }
-
-        @keyframes rotate {
-            0% { transform: rotate(45deg);}
-            50% { transform: rotate(90deg); }
-            100% { transform: 180deg;}
-        }
-
-        .item-1 { 
-            transition: all .1s ease;
-            background-color: red;
-        }
-
-        .item-1:hover {
-            padding: 10px 50px;
+            padding: 20px 50px;
             background-color: white;
             color: black;
             border: 1px solid black;
         }
 
-        .item-2 { 
-            transition: all .1s ease-in; background-color: blue;
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all .3s ease-in-out;
         }
-        .item-3 { 
-            transition: all .1s ease-out; background-color: green;
+
+        .icon-play {
+            font-size: 2em;
         }
-        .item-4 { 
-            transition: all .1s ease-in-out; background-color: purple;
+
+        .icon {
+            transform: scale(1.2);
+            padding-left: 0.3em;
+            padding-top: 0.8em;
         }
+        
+        .check-icon {
+            transform: scale(0.5);
+            position: relative;
+            right: 8px;
+        }
+
+        .texto {
+            /* display: none; */
+            display: flex;
+            /* align-items: center; */
+            color: black;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .texto > p {
+            width: 12em;
+        }
+
+        .itens:hover ~ .texto > .icon {
+            padding-left: 1em;
+            padding-top: 1.1em;
+        }
+
+
+        .itens:hover ~ .texto > p {
+            width: 20em;
+        }
+        .channel-name {
+            padding-left: 0.5em;
+        }
+
+        /* .itens:hover ~ .texto{
+            display: flex;
+        } */
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            border-bottom: 1px solid red;
+        }
+
 
     </style>
 </head>
 <body>
     <main class="container">
-        <div class="itens item-1">box</div>
-        <div class="itens item-2">box</div>
-        <div class="itens item-3">box</div>
-        <div class="itens item-4">box</div>
+        <section>
+            <div class="itens item-1">
+                <span class="material-symbols-outlined icon-play">play_circle</span>
+            </div>
+            <div class="texto">
+                <span class="material-symbols-outlined icon">account_circle</span>
+                <p>
+                    <span class="title-name">Aqui se encontra meu título do vídeo</span> <br>
+                    <span class="channel-name"> <a href="#">Lukas Biscoito</a> <span class="material-symbols-outlined check-icon">check_circle</span> </span>
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="itens item-2">
+                <span class="material-symbols-outlined icon-play">play_circle</span>
+            </div>
+            <div class="texto">
+                <span class="material-symbols-outlined icon">account_circle</span>
+                <p>
+                Aqui se encontra meu título do vídeo <br>
+                    <span class="channel-name"> <a href="#">Lukas Biscoito</a> <span class="material-symbols-outlined check-icon">check_circle</span> </span>
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="itens item-3">
+                <span class="material-symbols-outlined icon-play">play_circle</span>
+            </div>
+            <div class="texto">
+                <span class="material-symbols-outlined icon">account_circle</span>
+                <p>
+                Aqui se encontra meu título do vídeo <br>
+                    <span class="channel-name"> <a href="#">Lukas Biscoito</a> <span class="material-symbols-outlined check-icon">check_circle</span> </span>
+                </p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
