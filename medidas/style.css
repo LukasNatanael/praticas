@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    font-size: 16px;
+}
+
+.div {
+    background-color: brown;
+    width: 10rem;
+}
+
+.container {
+    width: 200px;
+    font-size: 25px;
+}
+
+.container div {
+    background-color: aqua;
+    margin-top: 10px;
+    width: 10em;
+}
