@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fonts/fontes.css">
+    <style>
+
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: auto;
+            width: 500px;
+            text-align: justify;
+
+        }
+        
+        p {
+            margin: 0;
+        }
+
+        .container {
+            padding: 1em;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 25px;
+            font-weight: 800;
+            border-radius: 10px;
+            border: 1px solid rgb(0, 174, 255);
+            color: black;
+            background-color: transparent;
+            cursor: pointer;
+            margin: .5em 0;
+        }
+        
+        .btnHover:hover {
+            background-color: rgb(0, 174, 255);
+            color: white;
+            border: transparent;
+        }
+        
+        .btnActive:active {
+            background-color: rgb(4, 148, 214);
+            color: white;
+            border: transparent;
+        }
+        
+        .btnDisabled:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+        
+        .btnEmpty:empty {
+            background-color: rgb(4, 148, 214);
+            border: transparent;
+        }
+        
+        .firstOfType p:first-of-type {
+            font-weight: bold;
+            color: rgb(0, 174, 255);
+
+        }
+
+        .lastOfType p:last-of-type {
+            font-weight: bold;
+            color: rgb(0, 174, 255);
+
+        }
+        
+        .inputFocus:focus {
+            background-color: rgb(0, 174, 255);
+            
+        }
+        
+        .btnNot:not(.new) {
+            color: white;
+            background-color: rgb(0, 174, 255);
+        }
+
+        input[type=checkbox] {
+            display: block;
+            cursor: pointer;
+        }
+
+        .checkbox:checked {
+            width: 30px;
+            height: 30px;
+            /* transform: scale(2); */
+        }
+
+        .checkboxAfter::after {
+            content: "Inativo";
+            position: relative;
+            left: 25px;
+            top: -3px;
+            font-size: 15px;
+        }
+        .checkboxAfter:checked::after {
+            content: 'Ativo';
+            color: rgb(0, 174, 255);
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pseudo classes CSS</h1>
+        
+        <hr>
+        <h2>1 - Hover</h2>
+        <button class="btnHover">
+            Click here
+        </button>
+
+        <hr>
+        <h2>2 - Active</h2>
+        <button class="btnActive">
+            Click here
+        </button>
+
+        <hr>
+        <h2>3 - Disabled</h2>
+        <button class="btnDisabled" disabled>
+            Click here
+        </button>
+
+        <hr>
+        <h2>4 - Empty</h2>
+        <button class="btnEmpty">Click here</button>
+        <button class="btnEmpty"></button>
+        <button class="btnEmpty">Click here</button>
+
+        <hr>
+        <h2>5 - First Of Type</h2>
+        <div class="firstOfType">
+            <p>Parágrafo de teste 1</p>
+            <p>Parágrafo de teste 2</p>
+            <p>Parágrafo de teste 3</p>
+        </div>
+
+        <hr>
+        <h2>6 - Last Of Type</h2>
+        <div class="lastOfType">
+            <p>Parágrafo de teste 1</p>
+            <p>Parágrafo de teste 2</p>
+            <p>Parágrafo de teste 3</p>
+        </div>
+
+        <hr>
+        <h2>7 - Focus</h2>
+        <div class="focus">
+            <input type="text" id="" class="inputFocus">
+        </div>
+
+        <hr>
+        <h2>8 - Not</h2>
+        <div class="focus">
+            <button class="btnNot">Click here</button>
+            <button class="btnNot new">Click here</button>
+            <button class="btnNot">Click here</button>
+        </div>
+
+        <hr>
+        <h2>9 - Checked</h2>
+        <input type="checkbox" id="a" class="checkbox">
+        <input type="checkbox" id="b" class="checkbox">
+        <input type="checkbox" id="c" class="checkbox">
+
+        <hr>
+        <h2>10 - Checked + After</h2>
+        <input type="checkbox" id="a" class="checkboxAfter">
+        <input type="checkbox" id="b" class="checkboxAfter">
+        <input type="checkbox" id="c" class="checkboxAfter">
+    </div>
+</body>
+</html>
