@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <link rel="stylesheet" href="../fonts/fontes.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        /* :link, :visited, :hover, :active, :focus */
+
+        .my-link {
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 3em;
+        }
+
+        /* Quando o link não for visitado */
+        .my-link:link {
+            color: green;
+            
+        }
+        /* Link já visitado */
+        .my-link:visited {
+            color: red;
+        }
+
+        /* Cursor sobre o link */
+        .my-link:hover {
+            color: blue;
+        }
+
+        /* Link ativo */
+        .my-link:active {
+            color: purple;
+        }
+
+        /* Cursor em foco */
+        .my-link:focus {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="my-link">Meu link</a>
+</body>
+</html>

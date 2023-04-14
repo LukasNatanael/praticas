@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: auto;
+            width: 500px;
+            text-align: justify;
+        }
+
+        .container {
+            padding: 1em;
+        }
+
+        .firstLine::first-line {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .firstLetter::first-letter {
+            color: red;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .selection::selection {
+            color: black;
+            background-color: rgba(0, 140, 255, 0.575);
+        }
+
+        ul.marker li::marker {
+            content: ">> ";
+            font-weight: bold;
+            color: red;
+        }
+
+        .placeholder::placeholder {
+            font-weight: bold;
+            color: rgb(255, 0, 0);
+            letter-spacing: 1px;
+        }
+
+        .before::before {
+            content: "[X] ";
+            font-weight: bold;
+            color: red;
+        }
+        
+        .after::after {
+            content: " ✔️";
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Pseudo elementos CSS</h1>
+        <hr>
+
+        <h2>1 - First Line</h2>
+        <p class="firstLine">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo sequi aperiam eum voluptatem eius reprehenderit, magnam placeat totam. Sapiente molestiae quasi excepturi eligendi eius ullam aspernatur repellat nulla ducimus laudantium!
+        </p>
+
+        <hr>
+        <h2>2 - First Letter</h2>
+        <p class="firstLetter">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo sequi aperiam eum voluptatem eius reprehenderit, magnam placeat totam. Sapiente molestiae quasi excepturi eligendi eius ullam aspernatur repellat nulla ducimus laudantium!
+        </p>
+
+        <hr>
+        <h2>3 - Selection</h2>
+        <p class="selection">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo sequi aperiam eum voluptatem eius reprehenderit, magnam placeat totam. Sapiente molestiae quasi excepturi eligendi eius ullam aspernatur repellat nulla ducimus laudantium!
+        </p>
+
+        <hr>
+        <h2>4 - Marker</h2>
+        <ul class="marker">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <hr>
+        <h2>5 - Placeholder</h2>
+        <input type="text" id="nome" placeholder="Digite seu email" class="placeholder">
+        
+        <hr>
+        <h2>6 - Before</h2>
+        <div class="before">Exemplo de texto.</div>
+        <div class="before">Exemplo de texto.</div>
+        <div class="before">Exemplo de texto.</div>
+        
+        <hr>
+        <h2>7 - After</h2>
+        <div class="after">Exemplo de texto</div>
+        <div class="after">Exemplo de texto</div>
+        <div class="after">Exemplo de texto</div>
+    </div>
+</body>
+</html>
