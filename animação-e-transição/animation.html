@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <link rel="stylesheet" href="../fonts/fontes.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .item:hover {
+            animation-play-state: paused;
+        }
+        
+        .animationFadeIn {
+            animation: fadeIn 2s linear;
+        }
+                
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animationFadeOut {
+            animation: fadeIn 2s linear;
+            animation-direction: reverse;
+            animation-fill-mode: forwards;
+        }
+        
+        .animationFadeInFadeOut {
+            animation: animationFadeInFadeOut 2s linear infinite;
+            
+        }
+
+        @keyframes animationFadeInFadeOut {
+            0% {opacity: 1;}
+            50% {opacity: 0.2;}
+            100% {opacity: 1;}
+        }
+
+        .spinner {
+            border-radius: 50%;
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .animationSpinner {
+            animation: rotate 2s linear infinite;
+        }
+
+        .animationSpinnerEase {
+            animation: rotate 2s ease infinite;
+        }
+        
+        .animationSpinnerEaseOut {
+            animation: rotate 2s ease-out infinite;
+        }
+
+        .positionBox {
+            align-items: baseline;
+            width: 100%;
+            height: 300px;
+            background-color: #444;
+            position: relative;
+        }
+        
+        .animationPosition {
+            position: absolute;
+            animation: position 4s linear infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes position {
+            0% {
+                top: 0;
+                left: 0;
+            }
+            35% {
+                top: 0;
+                left: calc(100% - 100px);
+            }
+            50% {
+                top: calc(100% - 100px);
+                left: calc(100% - 100px);
+            }
+            85% {
+                top: calc(100% - 100px);
+                left: 0;
+            }
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .animationContent::after {
+            content: '';
+            animation: promocao 2s linear infinite;
+        }
+
+        @keyframes promocao {
+            0% {content: 'Promoção';}
+            50% {content: '';}
+            60% {content: 'Frete grátis';}
+        }
+    </style>
+</head>
+<body>
+    <h1>Animações</h1>
+    
+    <h2>Fade</h2>
+    <section>
+        <div class="item blue animationFadeIn">Azul</div>
+        <div class="item green animationFadeOut">Verde</div>
+        <div class="item red animationFadeInFadeOut">Vermelho</div>
+    </section>
+
+    <hr>
+
+    <h2>Spinners</h2>
+    <section>
+        <div class="item spinner blue animationSpinner">Linear</div>
+        <div class="item spinner green animationSpinnerEase">Ease</div>
+        <div class="item spinner red animationSpinnerEaseOut">EaseOut</div>
+    </section>
+    
+    <hr>
+    
+    <h2>Position</h2>
+    <section class="positionBox">
+        <div class="item yellow animationPosition">Amarelo</div>
+    </section>
+
+    <h2>Content</h2>
+    <sectio>
+        <div class="item red animationContent"></div>
+    </section>
+</body>
+</html>
